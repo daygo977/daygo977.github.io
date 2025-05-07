@@ -40,6 +40,7 @@
       padding: 1.5rem;
       border-radius: 0.25rem;
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      margin-bottom: 2rem;
     }
     .example .left { font-weight: bold; }
     pre { background: #272822; color: #f8f8f2; padding: 1rem; border-radius: 0.25rem; overflow-x: auto; }
@@ -80,6 +81,34 @@ KEY "Hello, PixKey!"
 ENDPIX</code></pre>
       <pre><code>// Run locally:
 node pixkey.js hello.pix</code></pre>
+    </section>
+
+    <hr>
+
+    <!-- FizzBuzz Example -->
+    <section class="example">
+      <h3>Example: FizzBuzz</h3>
+      <div class="left mb-2">FizzBuzz.pixkey</div>
+      <pre><code>let i = 1
+while i &lt;= 100 do
+    if i % 15 == 0 then
+        print "FizzBuzz"
+    else
+        if i % 3  == 0 then
+            print "Fizz"
+        else
+            if i % 5  == 0 then
+                print "Buzz"
+            else
+                print i
+            end
+        end
+    end
+    i = i + 1
+end</code></pre>
+
+      <!-- Make sure you have FizzBuzz.png next to this HTML file -->
+      <img src="FizzBuzz.png" alt="FizzBuzz output in pixels" class="img-fluid mt-3" />
     </section>
 
     <hr>
